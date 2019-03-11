@@ -74,7 +74,6 @@ void loop() {
                 if (cabecalho.endsWith("\n\r\n")){
                     Serial.println(cabecalho); //imprime cabeçalhos http recebidos
                     // iniciamos a resposta http com o código OK(200), 
-                    // Armazena na variável m o endereço MAC do client
                     // o tipo de conteúdo a ser enviado e tipo de conexão.
                     client.println("HTTP/1.1 200 OK");
                     client.println("Content-Type:text/html");
